@@ -8,7 +8,7 @@
 
 categories = ["mechanical", "graphics", "office", "carbon", "shading", "kids", "quill", "coloured"]
 
-if Catefory.count == 0
+if Category.count == 0
     categories.each do |category|
         Category.create(name: category)
         puts "created #{category} category"
