@@ -4,9 +4,11 @@
 <% if @listing.picture.attached? %>
   <%= image_tag @listing.picture, alt: @listing.title %>
 <% else %>
-  <%= image_tag "https://placekitten.com/408/287", alt: "placeholder" %>
+  <%= image_tag "https://placekitten.com/408/287", alt: "place_order" %>
 <% end %>
 </div>
+
+<%= button_to "Buy", place_order_path %>
 
 <p>
   <strong>Title:</strong>
