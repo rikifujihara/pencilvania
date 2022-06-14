@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'orders/success'
+  
   get 'orders/bought'
   get 'orders/sold'
   resources :listings
@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   post "listings/:id/order", to: "listings#place_order", as: "place_order"
 
-  get 'pages/success', to: 'pages#success', as: "order_success"
+  # get 'pages/success', to: 'pages#success', as: "order_success"
+  get 'orders/success' as: "order_success"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
