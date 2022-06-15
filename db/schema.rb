@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_06_07_021149) do
+=======
+ActiveRecord::Schema.define(version: 2022_06_06_010338) do
+>>>>>>> f0918ba83bd4ac2c3e451f36282281d0373546c4
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +57,7 @@ ActiveRecord::Schema.define(version: 2022_06_07_021149) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+<<<<<<< HEAD
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -83,6 +88,8 @@ ActiveRecord::Schema.define(version: 2022_06_07_021149) do
     t.index ["seller_id"], name: "index_orders_on_seller_id"
   end
 
+=======
+>>>>>>> f0918ba83bd4ac2c3e451f36282281d0373546c4
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
